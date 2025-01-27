@@ -1,0 +1,31 @@
+.nav_list {
+  display: flex;
+  justify-content: space-between;
+  gap: 64px;
+}
+
+.nav_item {
+  position: relative;
+}
+
+.nav_item_wrapper {
+  display: flex;
+  gap: 4px;
+}
+
+.nav_item_wrapper img {
+  padding: 10px 0 6px;
+}
+
+.item_box_menu {
+  display: none;
+  position: absolute;
+  width: 64px;
+}
+
+.nav_link {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 175%;
+  color: var(--greyscale-white);
+}

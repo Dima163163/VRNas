@@ -1,0 +1,57 @@
+:root {
+  --main-colors-purple: #ca6aeb;
+  --main-colors-blue: #19b5f1;
+  --greyscale-black-100: #18181b;
+  --greyscale-black-80: #252532;
+  --greyscale-grey-1: #b0b0b2;
+  --greyscale-grey-2: #d1d1d1;
+  --greyscale-white: #fff;
+  --alerts-success: #00c566;
+  --alerts-error: #ff4747;
+  --alerts-warning: #facc15;
+  --video-bg-color: #21232e;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  padding: 0;
+  border: none;
+  background: none;
+}
+
+
+body {
+  font-family: 'Chakra Petch', sans-serif;
+  font-size: 14px;
+  line-height: 175%;
+  font-weight: 400;
+  color: var(--greyscale-grey-1);
+}
+
+section {
+  margin: 0;
+}
+
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 40px;
+}
