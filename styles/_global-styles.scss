@@ -12,6 +12,10 @@
   --video-bg-color: #21232e;
 }
 
+* {
+  box-sizing: border-box;
+}
+
 h1, h2, h3, h4, h5, h6 {
   margin: 0;
 }
@@ -44,10 +48,7 @@ body {
   line-height: 175%;
   font-weight: 400;
   color: var(--greyscale-grey-1);
-}
-
-section {
-  margin: 0;
+  background: var(--greyscale-black-100);
 }
 
 .container {
