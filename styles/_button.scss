@@ -10,9 +10,16 @@
   border-image-slice: 1%;
 }
 
+.button:hover {
+  background: linear-gradient(90deg, var(--main-colors-blue), var(--main-colors-purple ));
+}
+
 .btn_gradient {
   cursor: pointer;
   background: linear-gradient(90deg, #0cbaf1 0%, #e95ce9 100%);
+  border: 1px solid transparent;
+  border-image: linear-gradient(90deg, var(--main-colors-blue), var(--main-colors-purple ));
+  border-image-slice: 1%;
   padding: 18px 38px;
   font-size: 14px;
   font-weight: 700;
@@ -20,4 +27,9 @@
   letter-spacing: 0.11em;
   text-transform: uppercase;
   color: var(--greyscale-white);
+  transition: all 0.6s;
+}
+
+.btn_gradient:hover {
+  background: transparent;
 }

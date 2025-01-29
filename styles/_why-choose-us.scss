@@ -1,0 +1,123 @@
+.why-choose-us {
+  padding: 75px 0;
+  overflow: hidden;
+}
+
+.why-choose-us_wrapper {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  position: relative;
+}
+
+.why-choose-us_content {
+  max-width: 548px;
+  padding-top: 94px;
+}
+
+.why-choose-us_subtitle {
+  margin-bottom: 12px;
+}
+
+.why-choose-us_title {
+  margin-bottom: 32px;
+}
+
+.why-choose-us_list {
+  min-height: 334px;
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+}
+
+.why-choose-us_item {
+  overflow: hidden;
+}
+
+.why-choose-us_item_top {
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #69696B;
+  padding-bottom: 12px;
+  margin-bottom: 12px;
+}
+
+.why-choose-us_item_title {
+  font-size: 20px;
+  font-weight: 400;
+  color: var(--greyscale-white);
+}
+
+.why-choose-us_item .why-choose-us_item_top img {
+  transition: all 0.6s;
+}
+
+.why-choose-us_item.active .why-choose-us_item_top img {
+  transform: rotateX(180deg);
+}
+
+.why-choose-us_item .why-choose-us_item_text {
+  height: 0;
+  opacity: 0;
+  transform: translateX(-200px);
+  transition: all 0.6s;
+}
+
+.why-choose-us_item.active .why-choose-us_item_text {
+  height: auto;
+  opacity: 1;
+  transform: translateX(0px);
+}
+
+.why-choose-us_image_wrapper {
+  width: 42.25%;;
+  height: 699px;
+  position: relative;
+  right: 0;
+  padding-left: 28px;
+}
+
+
+.why-choose-us_bg {
+  position: absolute;
+  bottom: 37px;
+  left: 88px;
+  width: 398px;
+  height: 496px;
+  background: var(--greyscale-black-80);
+}
+
+.why-choose-us_user {
+  position: absolute;
+  z-index: 5;
+  left: 28px;
+  right: -84px;
+  width: 563px;
+  height: 662px;
+}
+
+.why-choose-us_video {
+  position: absolute;
+  background-image: url('../images/why-choose-us-img-video.png');
+  background-image: -webkit-image-set('../images/why-choose-us-img-video.avif' type('image/avif'), '../images/why-choose-us-img-video.webp' type('image/webp'));
+  background-image: image-set('../images/why-choose-us-img-video.avif' type('image/avif'), '../images/why-choose-us-img-video.webp' type('image/webp'));
+  background-position: center;
+  background-size: cover;
+  bottom: 0;
+  right: 0;
+  z-index: 6;
+}
+
+.why-choose-us_wrapper::after {
+  content: '';
+  background-image: url('../images/why-choose-us-light.png');
+  width: 837px;
+  height: 735px;
+  position: absolute;
+  right: -84px;
+  top: 0;
+  z-index: 3;
+  filter: blur(30px);
+}
