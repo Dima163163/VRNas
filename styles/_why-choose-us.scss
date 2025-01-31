@@ -11,8 +11,10 @@
 }
 
 .why-choose-us_content {
+  position: relative;
   max-width: 548px;
   padding-top: 94px;
+  z-index: 30;
 }
 
 .why-choose-us_subtitle {
@@ -78,7 +80,6 @@
   right: 0;
   padding-left: 28px;
 }
-
 
 .why-choose-us_bg {
   position: absolute;

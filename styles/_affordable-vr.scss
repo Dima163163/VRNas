@@ -1,0 +1,130 @@
+.affordable-vr {
+  padding: 50px 0 99px;
+}
+
+.affordable-vr_container {
+  text-align: left;
+}
+
+.affordable-vr_subtitle {
+  margin-bottom: 16px;
+}
+
+.affordable-vr_title {
+  margin-bottom: 12px;
+}
+
+.affordable-vr_text {
+  max-width: 625px;
+  margin-bottom: 40px;
+}
+
+.affordable-vr_content {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 20px;
+  flex-wrap: wrap;
+  width: 100%;
+  min-height: 587px;
+  background: rgba(37, 37, 50, 0.81);
+  border: 1px solid transparent;
+  border-image: linear-gradient(90deg, #64646c 0%, #292833 100%);
+  border-image-slice: 1%;
+}
+
+.affordable-vr_list {
+  padding: 55px 0 55px 42px;
+  max-width: 682px;
+  width: 100%;
+}
+
+.affordable-vr_item {
+  max-width: 640px;
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  align-items: start;
+  margin-bottom: 32px;
+}
+
+.affordable-vr_item:last-child {
+  margin-bottom: 0;
+}
+
+.affordable-vr_item_title {
+  font-weight: 400;
+  font-size: 18px;
+  color: var(--greyscale-white);
+  margin-bottom: 12px;
+}
+
+.affordable-vr_item_text {
+  font-weight: 400;
+  color: var(--greyscale-grey-1);
+}
+.affordable-vr_content picture {
+  height: 520px;
+}
+.affordable-vr_img {
+  width: 360px;
+  height: 520px;
+}
+
+.affordable-vr_content::after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  right: -50px;
+  top: 10px;
+  width: 80%;
+  height: 100%;
+  filter: blur(40px);
+  background-image: url('../images/affordable-vr-light.png');
+  background-image: -webkit-image-set('../images/affordable-vr-light.avif' type('image/avif'), '../images/affordable-vr-light.webp' type('image/webp'));
+  background-image: image-set('../images/affordable-vr-light.avif' type('image/avif'), '../images/affordable-vr-light.webp' type('image/webp'));
+}
+
+.affordable-vr_info {
+  position: absolute;
+  right: 14%;
+  bottom: -8%;
+  width: 321px;
+  padding: 20px 69px 18px 70px;
+  border: 1px solid transparent;
+  border-image: linear-gradient(90deg, var(--main-colors-blue) 0%, var(--main-colors-purple) 100%);
+  border-image-slice: 1%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: var(--greyscale-black-80);
+}
+
+.affordable-vr_info_subtitle {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 143%;
+  color: var(--greyscale-grey-2);
+}
+
+.affordable-vr_info_title {
+  font-weight: 600;
+  font-size: 60px;
+  line-height: 110%;
+  color: var(--greyscale-white);
+  margin-bottom: 14px;
+}
+
+.affordable-vr_btn {
+  margin-bottom: 14px;
+  width: 182px;
+  padding: 18px;
+}
+
+.affordable-vr_info_text {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 167%;
+  color: var(--greyscale-grey-1);
+}
