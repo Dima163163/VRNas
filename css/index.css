@@ -2031,13 +2031,13 @@ body {
 
 .footer_container {
   position: relative;
-  z-index: 20;
 }
 
 .footer_bg {
   position: absolute;
   top: -109px;
   left: -121px;
+  z-index: 1;
 }
 
 .footer_top {
@@ -2066,6 +2066,7 @@ body {
 }
 
 .footer_social_link {
+  cursor: pointer;
   width: 46px;
   height: 46px;
   border-radius: 100px;
@@ -2089,6 +2090,11 @@ body {
   -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
   -webkit-mask-composite: destination-out;
   mask-composite: exclude;
+}
+
+.footer_top {
+  position: relative;
+  z-index: 5;
 }
 
 .footer_top_right {
