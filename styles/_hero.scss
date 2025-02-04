@@ -1,5 +1,6 @@
 .hero {
   position: relative;
+  overflow: hidden;
 }
 
 .hero_image_right {
@@ -16,6 +17,9 @@
 
 .hero_container {
   position: relative;
+}
+
+.hero_wrapper {
   padding-top: 127px;
   padding-bottom: 60px;
 }
@@ -26,14 +30,15 @@
   justify-content: space-between;
   gap: 20px;
   flex-wrap: wrap;
+  z-index: 10;
 }
 
 .hero_image_left {
   position: absolute;
   height: 721px;
-  right: 380px;
-  top: 260px;
-  z-index: 2;
+  right: 20%;
+  bottom: 15%;
+  z-index: 3;
 }
 
 .hero_content_video {
@@ -138,7 +143,6 @@
   width: 866px;
   height: 760px;
   right: -40px;
-  backdrop-filter: blur(50px);
   filter: blur(20px);
   top: 0px;
 }
@@ -146,7 +150,7 @@
 
 .hero_image {
   position: relative;
-  z-index: 200;
+  z-index: 20;
   height: auto;
   width: 526px;
 }
@@ -159,6 +163,9 @@
   padding: 42px 63px 53px;
   position: relative;
   z-index: 3;
+  border: 1px solid transparent;
+  border-image: linear-gradient(90deg, #66666F 0%, #292936 100%);
+  border-image-slice: 1%;
 }
 
 .hero_steps_item {
@@ -183,4 +190,85 @@
   font-weight: 400;
   line-height: 200%;
   color: var(--greyscale-grey-1);
+}
+
+
+@media (max-width: 1199px) {
+  .hero_image_right {
+    background-image: url('../icons/hero-image-430px.svg');
+    width: 430px;
+    height: 354px;
+  }
+
+  .hero_content_wrapper {
+    flex-direction: column;
+  }
+
+  .hero_content {
+    position: static;
+  }
+
+  .hero_steps_list {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hero_image_wrapper {
+    height: 422px;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .hero_image {
+    width: 354px;
+    height: 422px;
+    right: -40%;
+  }
+
+  .hero_image_wrapper::after {
+    width: 70%;
+    height: 100%;
+    filter: blur(120px);
+  }
+
+  .hero_image_left {
+    bottom: 40%;
+    right: -16%;
+  }
+
+  .hero_content_video {
+    position: absolute;
+    bottom: 18%;
+  }
+}
+
+
+@media (max-width: 767px) {
+  .hero {
+    padding-bottom: 50px;
+  }
+
+  .hero_wrapper {
+    padding-top: 154px;
+    padding-bottom: 0;
+  }
+
+  .hero_content {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  .hero_title {
+    font-size: 48px;
+  }
+
+  .hero_btn {
+    margin-bottom: 32px;
+  }
+
+  .hero_image_left {
+    bottom: 50%;
+    right: -500px;
+  }
 }

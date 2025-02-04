@@ -23,3 +23,10 @@
   line-height: 175%;
   color: var(--greyscale-grey-2);
 }
+
+
+@media (max-width: 1199px) {
+  .title {
+    font-size: 32px;
+  }
+}

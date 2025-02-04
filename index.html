@@ -54,87 +54,96 @@
         </nav>
         <!-- nav block end -->
         <button class="button header_button">Contact us</button>
+        <div class="btn_burger">
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
       </div>
     </header>
     <!-- header section end -->
     <main>
+      <!-- section hero start -->
       <section class="hero">
         <div class="hero_image_right"></div>
         <div class="container hero_container">
           <div class="hero_image_left">
             <img src="icons/hero-image-2.svg" alt="hero image">
           </div>
-          <div class="hero_content_wrapper">
-            <div class="hero_content">
-              <h1 class="hero_title">Immerse Yourself in Virtual Reality</h1>
-              <p class="hero_text">Experience Unforgettable Events in VR. Bring your events to life like never before
-                with our VR services</p>
-              <button class="btn_gradient hero_btn">discover more</button>
-              <div class="hero_content_box">
-                <div class="hero_content_client">
-                  <ul class="hero_content_client_list">
-                    <li class="hero_content_client_item">
-                      <img src="icons/client-1.svg" alt="client-1">
-                    </li>
-                    <li class="hero_content_client_item">
-                      <img src="icons/client-2.svg" alt="client-2">
-                    </li>
-                    <li class="hero_content_client_item">
-                      <img src="icons/client-3.svg" alt="client-3">
-                    </li>
-                  </ul>
-                  <div class="hero_content_client_text_box">
-                    <p class="hero_content_client_text">32k+ <span>Happy Client</span></p>
-                    <img src="icons/heppy-client-line.svg" alt="line">
+          <div class="hero_wrapper">
+            <div class="hero_content_wrapper">
+              <div class="hero_content">
+                <h1 class="hero_title">Immerse Yourself in Virtual Reality</h1>
+                <p class="hero_text">Experience Unforgettable Events in VR. Bring your events to life like never before
+                  with our VR services</p>
+                <button class="btn_gradient hero_btn">discover more</button>
+                <div class="hero_content_box">
+                  <div class="hero_content_client">
+                    <ul class="hero_content_client_list">
+                      <li class="hero_content_client_item">
+                        <img src="icons/client-1.svg" alt="client-1">
+                      </li>
+                      <li class="hero_content_client_item">
+                        <img src="icons/client-2.svg" alt="client-2">
+                      </li>
+                      <li class="hero_content_client_item">
+                        <img src="icons/client-3.svg" alt="client-3">
+                      </li>
+                    </ul>
+                    <div class="hero_content_client_text_box">
+                      <p class="hero_content_client_text">32k+ <span>Happy Client</span></p>
+                      <img src="icons/heppy-client-line.svg" alt="line">
+                    </div>
+                  </div>
+                  <div class="video_box hero_content_video">
+                    <button class="video_box_btn">
+                      <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g filter="url(#filter0_b_11_242)">
+                          <rect x="0.583333" y="0.583333" width="26.8333" height="26.8333" rx="13.4167" stroke="white"
+                            stroke-width="1.16667" />
+                          <path
+                            d="M19.6875 13.2664C20.2708 13.5924 20.2708 14.4076 19.6875 14.7336L11.8125 19.1352C11.2292 19.4613 10.5 19.0537 10.5 18.4016L10.5 9.59836C10.5 8.94626 11.2292 8.53871 11.8125 8.86475L19.6875 13.2664Z"
+                            fill="white" />
+                        </g>
+                      </svg>
+                    </button>
                   </div>
                 </div>
-                <div class="video_box hero_content_video">
-                  <button class="video_box_btn">
-                    <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <g filter="url(#filter0_b_11_242)">
-                        <rect x="0.583333" y="0.583333" width="26.8333" height="26.8333" rx="13.4167" stroke="white"
-                          stroke-width="1.16667" />
-                        <path
-                          d="M19.6875 13.2664C20.2708 13.5924 20.2708 14.4076 19.6875 14.7336L11.8125 19.1352C11.2292 19.4613 10.5 19.0537 10.5 18.4016L10.5 9.59836C10.5 8.94626 11.2292 8.53871 11.8125 8.86475L19.6875 13.2664Z"
-                          fill="white" />
-                      </g>
-                    </svg>
-                  </button>
-                </div>
+              </div>
+              <div class="hero_image_wrapper">
+                <picture>
+                  <source src="images/hero-image.avif" type="image/avif">
+                  <source src="images/hero-image.webp" type="image/webp">
+                  <img class="hero_image" src="images/hero-image.png" alt="hero image">
+                </picture>
               </div>
             </div>
-            <div class="hero_image_wrapper">
-
-              <picture>
-                <source src="images/hero-image.avif" type="image/avif">
-                <source src="images/hero-image.webp" type="image/webp">
-                <img class="hero_image" src="images/hero-image.png" alt="hero image">
-              </picture>
-            </div>
+            <ul class="hero_steps_list">
+              <li class="hero_steps_item">
+                <img class="hero_steps_item_img" src="icons/expertise.svg" alt="expertise">
+                <h3 class="hero_steps_item_title">Expertise</h3>
+                <p class="hero_steps_item_text">Our team consists of experienced VR developers, designers, and technicians
+                  who have a passion for VR and a commitment to delivering quality work and give the best service</p>
+              </li>
+              <li class="hero_steps_item">
+                <img class="hero_steps_item_img" src="icons/customization.svg" alt="customization">
+                <h3 class="hero_steps_item_title">Customization</h3>
+                <p class="hero_steps_item_text">Every client is unique, and we believe every VR experience should be too.
+                  We'll work with you to create a customized solution that meets your specific needs and goals</p>
+              </li>
+              <li class="hero_steps_item">
+                <img class="hero_steps_item_img" src="icons/service.svg" alt="service">
+                <h3 class="hero_steps_item_title">Service</h3>
+                <p class="hero_steps_item_text">We believe in providing exceptional customer service, from initial
+                  consultation to final delivery. Our goal is to ensure you're satisfied with every aspect of your VR
+                  experience.</p>
+              </li>
+            </ul>
           </div>
-          <ul class="hero_steps_list">
-            <li class="hero_steps_item">
-              <img class="hero_steps_item_img" src="icons/expertise.svg" alt="expertise">
-              <h3 class="hero_steps_item_title">Expertise</h3>
-              <p class="hero_steps_item_text">Our team consists of experienced VR developers, designers, and technicians
-                who have a passion for VR and a commitment to delivering quality work and give the best service</p>
-            </li>
-            <li class="hero_steps_item">
-              <img class="hero_steps_item_img" src="icons/customization.svg" alt="customization">
-              <h3 class="hero_steps_item_title">Customization</h3>
-              <p class="hero_steps_item_text">Every client is unique, and we believe every VR experience should be too.
-                We'll work with you to create a customized solution that meets your specific needs and goals</p>
-            </li>
-            <li class="hero_steps_item">
-              <img class="hero_steps_item_img" src="icons/service.svg" alt="service">
-              <h3 class="hero_steps_item_title">Service</h3>
-              <p class="hero_steps_item_text">We believe in providing exceptional customer service, from initial
-                consultation to final delivery. Our goal is to ensure you're satisfied with every aspect of your VR
-                experience.</p>
-            </li>
-          </ul>
         </div>
       </section>
+      <!-- section hero end -->
+      <!-- section about-us start -->
       <section class="about-us">
         <div class="container">
           <div class="about-us_wrapper">
@@ -221,6 +230,8 @@
           </div>
         </div>
       </section>
+      <!-- section about-us end -->
+      <!-- section our-service start -->
       <section class="our-service">
         <div class="container">
           <div class="our-service_top">
@@ -330,6 +341,8 @@
           </ul>
         </div>
       </section>
+      <!-- section our-service end -->
+      <!-- section why-choose-us start -->
       <section class="why-choose-us">
         <div class="container">
           <div class="why-choose-us_wrapper">
@@ -384,7 +397,8 @@
             </div>
         </div>
       </section>
-      <section class="get-started">
+      <!-- section why-choose-us end -->
+      <!-- <section class="get-started">
         <div class="container get-started_container">
           <h4 class="subtitle get-started_subtitle">HOW TO GET STARTED</h4>
           <h3 class="title get-started_title">Bringing Your Virtual Reality Dreams to Life</h3>
@@ -415,8 +429,8 @@
           </div>
           <button class="btn_gradient">get started</button>
         </div>
-      </section>
-      <section class="reviews">
+      </section> -->
+      <!-- <section class="reviews">
         <div class="container reviews_container">
           <h4 class="subtitle reviews_subtitle">TESTIMONIAL</h4>
           <h3 class="title reviews_title">What Our Clients Are Saying</h3>
@@ -575,8 +589,8 @@
             </div>
           </div>
         </div>
-      </section>
-      <section class="affordable-vr">
+      </section> -->
+      <!-- <section class="affordable-vr">
         <div class="container affordable-vr_container">
           <h4 class="subtitle affordable-vr_subtitle">our pricing</h4>
           <h3 class="title affordable-vr_title">Affordable VR Services for Everyone</h3>
@@ -618,8 +632,8 @@
             </div>
           </div>
         </div>
-      </section>
-      <section class="partners">
+      </section> -->
+      <!-- <section class="partners">
         <div class="container partners_container">
           <h4 class="subtitle partners_subtitle">Our Trusted Partners</h4>
           <h3 class="title partners_title">Discover the Companies We Work With</h3>
@@ -761,8 +775,8 @@
             </div>
           </div>
         </div>
-      </section>
-      <section class="articles">
+      </section> -->
+      <!-- <section class="articles">
         <div class="container">
           <div class="articles_top">
             <div class="articles_title_wrapper">
@@ -978,8 +992,8 @@
             </div>
           </div>
         </div>
-      </section>
-      <section class="subscribe">
+      </section> -->
+      <!-- <section class="subscribe">
         <div class="container subscribe_container">
           <div class="subscribe_bg">
             <img src="/icons/subscribe-bg.svg" alt="bg img">
@@ -997,13 +1011,13 @@
             </label>
           </form>
         </div>
-      </section>
+      </section> -->
     </main>
-    <footer class="footer">
+    <!-- <footer class="footer">
+      <div class="footer_bg">
+        <img src="icons/footer-bg.svg" alt="footer bg">
+      </div>
       <div class="container footer_container">
-        <div class="footer_bg">
-          <img src="icons/footer-bg.svg" alt="footer bg">
-        </div>
         <div class="footer_top">
           <div class="footer_top_left">
             <a class="logo footer_logo" href="/">
@@ -1102,7 +1116,7 @@
           <p class="footer_copyright">© Copyright 2023, All Rights Reserved</p>
         </div>
       </div>
-    </footer>
+    </footer> -->
   </body>
 
 </html>

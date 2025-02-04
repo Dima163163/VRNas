@@ -116,6 +116,15 @@
 }
 
 @media (max-width: 1279px) {
+  .our-service {
+    padding: 50px 0 52px;
+  }
+
+  .our-service_top {
+    flex-direction: column;
+    align-items: start;
+  }
+
   .our-service_list {
     justify-content: center;
     gap: 32px;
@@ -150,5 +159,11 @@
   .our-service_item:nth-child(2),
   .our-service_item:nth-child(5) {
     margin-right: 0;
+  }
+}
+
+@media (max-width: 430px) {
+  .our-service_item {
+    width: 100%;
   }
 }

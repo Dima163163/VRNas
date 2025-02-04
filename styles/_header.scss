@@ -17,3 +17,16 @@
   width: 126px;
   height: 52px;
 }
+
+
+@media (max-width: 1199px) {
+  .header_button {
+    display: none;
+  }
+}
+
+@media (max-width: 767px) {
+  .header {
+    padding: 42px 0;
+  }
+}

@@ -4,10 +4,10 @@ import { initSlider } from './initSlider.js';
 import { initStartedVideo } from './initStartedVideo.js';
 
 const init = () => {
-  initStartedVideo();
+  // initStartedVideo();
   initAccordion();
-  initSlider();
-  initScroll();
+  // initSlider();
+  // initScroll();
 };
 
 init();

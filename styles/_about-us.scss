@@ -5,7 +5,7 @@
 .about-us_wrapper {
   display: flex;
   justify-content: space-between;
-  gap: 20px;
+  gap: 10px;
   position: relative;
   flex-wrap: wrap;
 }
@@ -54,13 +54,14 @@
 
 .about-us_img_wrapper {
   position: relative;
-  max-width: 608px;
+  max-width: 543px;
   height: 622px;
-  left: -54px;
 }
 
 .about-us_img_user {
-  padding-left: 78px;
+  padding-left: 24px;
+  width: 100%;
+  height: auto;
   position: relative;
   z-index: 4;
 }
@@ -71,12 +72,14 @@
   height: 496px;
   background-color: var(--greyscale-black-80);
   bottom: 0;
-  left: 55px;
+  left: 0;
 }
 
 .about-us_wrapper::after {
   content: '';
   background-image: url('../images/about-light.png');
+  background-repeat: no-repeat;
+  filter: blur(80px);
   width: 1029px;
   height: 785px;
   position: absolute;
@@ -95,4 +98,56 @@
   bottom: -23px;
   right: 26px;
   z-index: 4;
+}
+
+
+@media (max-width: 1199px) {
+  .about-us {
+    padding: 50px 0 52px;
+  }
+
+  .about-us_wrapper {
+    flex-direction: column;
+    align-items: start;
+    gap: 65px;
+  }
+
+  .about-us_wrapper::after {
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  .about-us_img_wrapper {
+    max-width: 407px;
+    height: 467px;
+  }
+
+  .about-us_img_wrapper picture {
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+
+  .about-us_img_user {
+    width: 389px;
+    height: 467px;
+    padding-left: 17px;
+  }
+
+  .about-us_bg {
+    max-width: 301px;
+    height: 373px;
+  }
+
+  .about-us_video {
+    width: 147px;
+    height: 96px;
+    right: 10px;
+  }
+
+  .about-us_content {
+    padding-top: 0;
+    width: 100%;
+  }
 }

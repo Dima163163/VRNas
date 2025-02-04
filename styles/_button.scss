@@ -33,3 +33,44 @@
 .btn_gradient:hover {
   background: transparent;
 }
+
+.btn_burger {
+  display: none;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+  cursor: pointer;
+  border: 1px solid transparent;
+  border-image: linear-gradient(90deg, var(--main-colors-blue), var(--main-colors-purple ));
+  border-image-slice: 1%;
+  padding: 9px;
+  color: var(--greyscale-white);
+  width: 32px;
+  height: 32px;
+}
+
+.btn_burger div {
+  height: 1px;
+  background: var(--greyscale-white);
+  margin-bottom: 2px;
+}
+
+.btn_burger > div:nth-child(1) {
+  width: 10px;
+}
+
+.btn_burger > div:nth-child(2) {
+  width: 7px;
+}
+
+.btn_burger > div:nth-child(3) {
+  width: 4px;
+  margin-bottom: 0;
+}
+
+
+@media (max-width: 1199px) {
+  .btn_burger {
+    display: flex;
+  }
+}

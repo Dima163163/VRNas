@@ -1,16 +1,13 @@
 .footer {
   padding: 115px 0 47px;
   overflow: hidden;
-}
-
-.footer_container {
   position: relative;
 }
 
 .footer_bg {
   position: absolute;
-  top: -109px;
-  left: -121px;
+  bottom: -8px;
+  left: 0;
   z-index: 1;
 }
 
