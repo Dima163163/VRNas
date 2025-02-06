@@ -143,6 +143,7 @@
         </div>
       </section>
       <!-- section hero end -->
+
       <!-- section about-us start -->
       <section class="about-us">
         <div class="container">
@@ -231,6 +232,7 @@
         </div>
       </section>
       <!-- section about-us end -->
+
       <!-- section our-service start -->
       <section class="our-service">
         <div class="container">
@@ -342,6 +344,7 @@
         </div>
       </section>
       <!-- section our-service end -->
+
       <!-- section why-choose-us start -->
       <section class="why-choose-us">
         <div class="container">
@@ -398,7 +401,9 @@
         </div>
       </section>
       <!-- section why-choose-us end -->
-      <!-- <section class="get-started">
+
+      <!-- section get-started start -->
+      <section class="get-started">
         <div class="container get-started_container">
           <h4 class="subtitle get-started_subtitle">HOW TO GET STARTED</h4>
           <h3 class="title get-started_title">Bringing Your Virtual Reality Dreams to Life</h3>
@@ -409,7 +414,7 @@
                 <h4 class="get-started_video_title">How to get started</h4>
               </div>
               <button class="get-started_btn_play">
-                  <svg width="100" height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path fill-rule="evenodd" clip-rule="evenodd" d="M50 100C77.6142 100 100 77.6142 100 50C100 22.3858 77.6142 0 50 0C22.3858 0 0 22.3858 0 50C0 77.6142 22.3858 100 50 100ZM42.1875 68.3402L70.3125 52.62C72.3958 51.4556 72.3958 48.5444 70.3125 47.38L42.1875 31.6598C40.1042 30.4954 37.5 31.9509 37.5 34.2799V65.7201C37.5 68.049 40.1042 69.5046 42.1875 68.3402Z" fill="white" fill-opacity="0.3"/>
                   </svg>
                 </button>
@@ -427,10 +432,13 @@
               </div>
             </div>
           </div>
-          <button class="btn_gradient">get started</button>
+          <button class="btn_gradient get-started_btn_gradient">get started</button>
         </div>
-      </section> -->
-      <!-- <section class="reviews">
+      </section>
+      <!-- section get-started end -->
+
+      <!-- section reviews start -->
+      <section class="reviews">
         <div class="container reviews_container">
           <h4 class="subtitle reviews_subtitle">TESTIMONIAL</h4>
           <h3 class="title reviews_title">What Our Clients Are Saying</h3>
@@ -443,7 +451,7 @@
                 </picture>
               </div>
               <div class="reviews_content_circle">
-                <svg width="391" height="391" viewBox="0 0 391 391" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <svg viewBox="0 0 391 391" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <circle cx="195.725" cy="195.5" r="194.743" fill="#252532" />
                   <circle cx="195.725" cy="195.5" r="194.243" stroke="white" stroke-opacity="0.17" />
                 </svg>
@@ -585,12 +593,15 @@
                   </div>
                 </div>
               </div>
-              <img src="icons/ellipse.svg" alt="ellipse">
+              <img class="reviews__ellipse" src="icons/ellipse.svg" alt="ellipse">
             </div>
           </div>
         </div>
-      </section> -->
-      <!-- <section class="affordable-vr">
+      </section>
+      <!-- section reviews end -->
+
+      <!-- section affordable-vr start -->
+      <section class="affordable-vr">
         <div class="container affordable-vr_container">
           <h4 class="subtitle affordable-vr_subtitle">our pricing</h4>
           <h3 class="title affordable-vr_title">Affordable VR Services for Everyone</h3>
@@ -632,8 +643,11 @@
             </div>
           </div>
         </div>
-      </section> -->
-      <!-- <section class="partners">
+      </section>
+      <!-- section affordable-vr end -->
+
+      <!-- section partners start -->
+      <section class="partners">
         <div class="container partners_container">
           <h4 class="subtitle partners_subtitle">Our Trusted Partners</h4>
           <h3 class="title partners_title">Discover the Companies We Work With</h3>
@@ -775,9 +789,12 @@
             </div>
           </div>
         </div>
-      </section> -->
-      <!-- <section class="articles">
-        <div class="container">
+      </section>
+      <!-- section partners end -->
+
+      <!-- section articles start -->
+      <section class="articles">
+        <div class="container articles_container">
           <div class="articles_top">
             <div class="articles_title_wrapper">
               <h4 class="subtitle articles_subtitle">OUR ARTICLES</h4>
@@ -991,31 +1008,45 @@
               </div>
             </div>
           </div>
+          <button class="button articles_button articles_button_mobile">see all</button>
         </div>
-      </section> -->
-      <!-- <section class="subscribe">
+      </section>
+      <!-- section articles end -->
+
+      <!-- section subscribe start -->
+      <section class="subscribe">
         <div class="container subscribe_container">
           <div class="subscribe_bg">
-            <img src="/icons/subscribe-bg.svg" alt="bg img">
+            <picture>
+              <source media="(max-width: 1199px)" srcset="icons/subscribe-bg-mobile.svg">
+              <img src="icons/subscribe-bg.svg" alt="bg img">
+            </picture>
           </div>
           <form class="subscribe_form">
             <h3 class="subscribe_title">Subscribe to our newsletter for latest updates</h3>
-            <label class="subscribe_label">
-              <img class="subscribe_img" src="icons/message.svg" alt="message">
-              <input class="subscribe_input" type="email" placeholder="Enter your email address" required>
-              <button class="subscribe_btn">
-                <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M14.9569 2.38799C14.6234 2.04573 14.1299 1.91822 13.6697 2.05244L2.93866 5.17302C2.45313 5.3079 2.10899 5.69512 2.01629 6.18703C1.92158 6.68767 2.25238 7.32319 2.68456 7.58894L6.03993 9.65121C6.38407 9.8626 6.82826 9.80958 7.11304 9.52236L10.9553 5.6562C11.1487 5.45487 11.4688 5.45487 11.6622 5.6562C11.8556 5.85082 11.8556 6.16623 11.6622 6.36756L7.81333 10.2344C7.52788 10.5209 7.47452 10.9672 7.68461 11.3135L9.73478 14.7025C9.97488 15.1052 10.3884 15.3333 10.8419 15.3333C10.8953 15.3333 10.9553 15.3333 11.0086 15.3266C11.5288 15.2595 11.9423 14.9038 12.0957 14.4005L15.277 3.68319C15.4171 3.22685 15.2904 2.73024 14.9569 2.38799Z" fill="white"/>
-                </svg>
-              </button>
-            </label>
+            <fieldset class="subscribe_fieldset">
+              <label class="subscribe_label">
+                <img class="subscribe_img" src="icons/message.svg" alt="message">
+                <input class="subscribe_input" type="email" placeholder="Enter your email address" required>
+                <button class="subscribe_btn">
+                  <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M14.9569 2.38799C14.6234 2.04573 14.1299 1.91822 13.6697 2.05244L2.93866 5.17302C2.45313 5.3079 2.10899 5.69512 2.01629 6.18703C1.92158 6.68767 2.25238 7.32319 2.68456 7.58894L6.03993 9.65121C6.38407 9.8626 6.82826 9.80958 7.11304 9.52236L10.9553 5.6562C11.1487 5.45487 11.4688 5.45487 11.6622 5.6562C11.8556 5.85082 11.8556 6.16623 11.6622 6.36756L7.81333 10.2344C7.52788 10.5209 7.47452 10.9672 7.68461 11.3135L9.73478 14.7025C9.97488 15.1052 10.3884 15.3333 10.8419 15.3333C10.8953 15.3333 10.9553 15.3333 11.0086 15.3266C11.5288 15.2595 11.9423 14.9038 12.0957 14.4005L15.277 3.68319C15.4171 3.22685 15.2904 2.73024 14.9569 2.38799Z" fill="white"/>
+                  </svg>
+                </button>
+              </label>
+            </fieldset>
           </form>
         </div>
-      </section> -->
+      </section>
+      <!-- section subscribe end -->
     </main>
-    <!-- <footer class="footer">
+    <!-- section footer start -->
+    <footer class="footer">
       <div class="footer_bg">
-        <img src="icons/footer-bg.svg" alt="footer bg">
+        <picture>
+          <source media="(max-width: 991px)" srcset="icons/footer-bg-mobile.svg">
+          <img src="icons/footer-bg.svg" alt="footer bg">
+        </picture>
       </div>
       <div class="container footer_container">
         <div class="footer_top">
@@ -1116,7 +1147,8 @@
           <p class="footer_copyright">© Copyright 2023, All Rights Reserved</p>
         </div>
       </div>
-    </footer> -->
+    </footer>
+    <!-- section footer end -->
   </body>
 
 </html>

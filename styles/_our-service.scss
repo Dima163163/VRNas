@@ -122,7 +122,7 @@
 
   .our-service_top {
     flex-direction: column;
-    align-items: start;
+    align-items: center;
   }
 
   .our-service_list {
@@ -162,8 +162,23 @@
   }
 }
 
+@media (max-width: 767px) {
+  .our-service_top {
+    align-items: start;
+  }
+}
+
 @media (max-width: 430px) {
   .our-service_item {
     width: 100%;
+    padding: 20px;
+  }
+
+  .our-service_btn_wrapper {
+    padding: 20px;
+  }
+
+  .our-service_content_img {
+    margin-bottom: 20px;
   }
 }

@@ -108,7 +108,7 @@
 
   .about-us_wrapper {
     flex-direction: column;
-    align-items: start;
+    align-items: center;
     gap: 65px;
   }
 
@@ -119,6 +119,7 @@
   }
 
   .about-us_img_wrapper {
+    margin: 0 auto;
     max-width: 407px;
     height: 467px;
   }
@@ -149,5 +150,38 @@
   .about-us_content {
     padding-top: 0;
     width: 100%;
+    text-align: center;
+  }
+}
+
+@media (max-width: 767px) {
+  .about-us_wrapper {
+    align-items: start;
+  }
+
+  .about-us_content {
+    text-align: left;
+  }
+}
+
+@media (max-width: 430px) {
+  .about-us_wrapper {
+    align-items: start;
+  }
+
+  .about-us_img_wrapper {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .about-us_img_user {
+    max-width: 100%;
+    height: auto;
+    bottom: 0;
+  }
+
+  .about-us_bg {
+    width: 200px;
+    height: 300px;
   }
 }

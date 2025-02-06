@@ -25,7 +25,6 @@
   justify-content: space-between;
   align-items: flex-end;
   gap: 20px;
-  flex-wrap: wrap;
   width: 100%;
   min-height: 587px;
   background: rgba(37, 37, 50, 0.81);
@@ -84,6 +83,7 @@
   background-image: url('../images/affordable-vr-light.png');
   background-image: -webkit-image-set('../images/affordable-vr-light.avif' type('image/avif'), '../images/affordable-vr-light.webp' type('image/webp'));
   background-image: image-set('../images/affordable-vr-light.avif' type('image/avif'), '../images/affordable-vr-light.webp' type('image/webp'));
+  background-repeat: no-repeat;
 }
 
 .affordable-vr_info {
@@ -127,4 +127,44 @@
   font-size: 12px;
   line-height: 167%;
   color: var(--greyscale-grey-1);
+}
+
+@media (max-width: 1199px) {
+  .affordable-vr_container {
+    text-align: center;
+  }
+
+  .affordable-vr_text {
+    margin: 0 auto;
+    margin-bottom: 40px;
+  }
+
+  .affordable-vr_content {
+    flex-direction: column;
+    gap: 37px;
+  }
+
+  .affordable-vr_list {
+    margin: 0 auto;
+    padding: 32px 22px;
+    border-bottom: 1px solid rgb(255, 255, 255, 0.1);
+  }
+
+  .affordable-vr_content::after {
+    right: 0;
+    top: 600px;
+    width: 800px;
+    height: 900px;
+  }
+}
+
+@media (max-width: 767px) {
+  .affordable-vr_container {
+    text-align: left;
+  }
+
+  .affordable-vr_text {
+    margin: 0;
+    margin-bottom: 47px;
+  }
 }

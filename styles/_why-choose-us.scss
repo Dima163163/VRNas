@@ -137,8 +137,8 @@
 
   .why-choose-us_wrapper {
     flex-direction: column-reverse;
-    align-items: center;
     flex-wrap: wrap;
+    align-items:center;
     gap: 75px;
   }
 
@@ -150,14 +150,15 @@
   }
 
   .why-choose-us_image_wrapper {
+    margin: 0 auto;
     width: 418px;
     height: 492px;
     padding: 0;
   }
 
   .why-choose-us_user {
-    width: 100%;
-    height: auto;
+    width: auto;
+    height: 100%;
     left: -10px;
   }
 
@@ -177,8 +178,24 @@
   }
 }
 
-@media (max-width: 991px) {
-    .why-choose-us_wrapper::after {
-      left: -50%;
-    }
+@media (max-width: 767px) {
+  .why-choose-us_wrapper {
+    align-items: start;
+  }
+
+  .why-choose-us_wrapper::after {
+    left: -50%;
+  }
+}
+
+@media (max-width: 430px) {
+  .why-choose-us_image_wrapper {
+    width: 100%;
+    height: 338px;
+  }
+
+  .why-choose-us_bg {
+    height: 300px;
+    width: 200px;
+  }
 }

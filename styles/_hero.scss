@@ -272,3 +272,10 @@
     right: -500px;
   }
 }
+
+
+@media (max-width: 430px) {
+  .hero_steps_item {
+    max-width: 100%;
+  }
+}
