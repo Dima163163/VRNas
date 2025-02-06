@@ -2511,6 +2511,10 @@ body {
   .articles {
     padding: 50px 0;
   }
+  .articles_container {
+    position: relative;
+    z-index: 4;
+  }
   .articles_top {
     margin-bottom: 40px;
     justify-content: center;
